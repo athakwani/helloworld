@@ -1,0 +1,21 @@
+{
+    dependencies:
+    [
+        {
+            name: "apt-packages",
+            cmd:
+            '''
+                apt-get install -y figlet
+            '''
+        }
+    ],
+    commands: {
+        welcome: [{
+            server:
+            '''
+                figlet "Hello World!"
+            '''
+        }]
+    }
+}
+
